@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  width: 14vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #eee;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 18px;
+  background-color: gray;
+}
+
+#header {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#pages {
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #8a817c;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+} /*** Nav Bar End ***/
+
+.nav-link:hover {
+  color: black;
+  background-color: darkgray;
+}
+
+main {
+  /*** Main Start ***/
+  margin-left: 16%;
+}
+
+header:nth-child(1) {
+  padding-top: 1rem;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+article {
+  padding: 0 1rem;
+  color: #191a19;
+  line-height: 2rem;
+}
+
+article ul {
+  padding: 1rem 5rem;
+}
+
+article ul li:nth-child(even) {
+  margin-top: 1rem;
+}
+
+code {
+  background-color: aliceblue;
+  padding: 1rem 3rem;
+  margin-left: 4px;
+  color: dimgrey;
+}
+
+article p {
+  margin: 2rem 0;
+} /*** Main End ***/
+
+footer {
+  /*** Footer ***/
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 850px) {
+  nav {
+    width: 18vw;
+  }
+
+  #header {
+    font-size: 16px;
+  }
+
+  main {
+    /*** Main Start ***/
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 6.4rem;
+    max-height: 6.4rem;
+    border-right: 0;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  section {
+    margin-top: 2rem;
+  }
+  article {
+    padding: 0 2rem;
+  }
+
+  article ul {
+    padding: 1rem 2rem;
+  }
+
+  code {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  article p {
+    margin-top: 1rem;
+  }
+}
