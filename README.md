@@ -1,2 +1,2 @@
-# Free-Code-Camp-projects-
+# Free-Code-Camp-projects
 Responsive Web Design projects and certification
